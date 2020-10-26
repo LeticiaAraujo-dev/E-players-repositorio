@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+
+:root{
+
+    --background: #000000;
+    --red: #C20000;
+    --linear-gradient: (270deg, #000000 50%, rgba(0, 0, 0, 0) 100%);
+    --font: 'Titillium Web', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1200px){
+
+}
