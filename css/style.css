@@ -5,7 +5,10 @@
 
     --background: #000000;
     --red: #C20000;
+    --blue: #001f70;
+    --black1: #1E1C21;
     --linear-gradient: (270deg, #000000 50%, rgba(0, 0, 0, 0) 100%);
+    --gradient: linear-gradient(180deg, rgba(83, 83, 83, 0.5) 0%, #000000 100%);
     --font: 'Titillium Web', sans-serif;
 }
 *{
@@ -28,7 +31,7 @@ img{
     /*background-color: azure;*/
 }
 .content{
-    width: 80%;
+    width: 95%;
     height: 100%;
     max-width: 75em;
     margin: auto;
@@ -56,7 +59,7 @@ img{
     color: #ffffff;
     text-decoration: none;
     font-size: 1.5em;
-    padding: 0.9em 1em;
+    padding: 0.9em 0.5em;
     text-transform: uppercase;
 }
 .menu a:hover{
@@ -76,7 +79,7 @@ img{
     top: 0;
 }
 .banner-content{
-    width: 80%;
+    width: 95%;
     height: 100%;
     margin: auto;
     display: flex;
@@ -110,13 +113,11 @@ img{
 .jogos{
     width: 100%;
     height: 7.5em;
+    color: #fff;
 }
 .jogos ul{
     list-style-type: none;
     width: 100%;
-}
-.jogos img{
-    width: 170px;
 }
 .jogos ul a:hover img{
     transition: 0.2s;
@@ -125,7 +126,7 @@ img{
 .about{
     width: 100%;
     height: 31.25em;
-    background-color: #001F70;
+    background-color: var(--blue);
     position: relative;
 }
 .about-angulation{
@@ -161,27 +162,30 @@ img{
     margin-bottom: 1em;
 }
 .about-position img{
-    max-width: 31.78em;
-}
-.jogos-aovivo::after{
-    content:'';
-    border:solid 1px #fff;
-    height: 2em;
-    margin-left: 1em;
+    max-width: 31.87em;
 }
 .jogos-aovivo, .jogos-embreve{
-    display: flex;
-    color:#fff;
-    align-items: center;
-    font-size: 1.875em;/*30px*/
-    justify-content: space-between;
+font-family: 'Roboto', sans-serif;
+font-weight: bold;
+font-size: 1.575em;
+}
+.jogos-aovivo h2, .jogos-embreve h2{
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+.linha{
+    height: 3em;
+    border: solid 1px #fff;
 }
 .partidas{
+    width: 9.5em;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    margin-left: 1em;
 }
 .partidas img{
-max-width: 3.375em;
+max-width: 1.8em;
 }
 .time1, .time2{
     display: flex;
@@ -194,6 +198,79 @@ max-width: 3.375em;
 }
 .time2 img{
     margin-left: 0.5em;
+}
+.bg-noticias{
+    width: 100%;
+    height: auto;
+    background-color: var(--black1);
+}
+.noticias{
+    width: 73%;
+    height: 90%;
+}
+.noticias h2, .proximos-jogos h2{
+color: #fff;
+margin: 0.5em 0;
+font-size: 2.1875em;
+text-transform: uppercase;
+}
+.proximos-jogos{
+    width: 25%;
+    height: auto;
+}
+.newscard{
+    width: 100%;
+    max-width: 15em;
+    height: 23.125em;
+    background: var(--gradient);
+    color: #fff;
+    margin-bottom: 1.5em;
+    box-shadow: 0px 0px 15px rgb(59, 59, 59);
+}
+.noticias h3{
+    padding: 0.5em;
+    text-transform: uppercase;
+}
+.noticias p{
+    padding: 0em 0.7em;
+}
+.wrap{
+    flex-wrap: wrap
+}
+.proximas-partidas{
+    background: var(--gradient);
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.game{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+.times{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.times div{
+    display: flex;
+    align-items: center;
+}
+.times p{
+    font-size: 1.25em;
+    font-family:'Roboto';
+}
+.times > p{
+    margin: 0 1em;
+}
+.times img{
+    width: 2.5em;
 }
 @media screen and (max-width: 1200px){
 
