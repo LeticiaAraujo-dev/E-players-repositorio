@@ -37,6 +37,9 @@ img{
     margin: auto;
     /*background-color: burlywood;*/
 }
+.rodape .content img{
+    max-width: 20em;
+}
 .flex-center-bt{
     display: flex;
     align-items: center;
@@ -65,9 +68,7 @@ img{
 .menu a:hover{
     background-color: var(--red);
 }
-#meus-bars{
-    display: none;
-}
+
 .banner{
     width: 100%;
     position: relative;
@@ -185,7 +186,7 @@ font-size: 1.575em;
     margin-left: 1em;
 }
 .partidas img{
-max-width: 1.8em;
+    max-width: 1.8em;
 }
 .time1, .time2{
     display: flex;
@@ -195,9 +196,11 @@ max-width: 1.8em;
 }
 .time1 img{
     margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 .time2 img{
     margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 .bg-noticias{
     width: 100%;
@@ -282,7 +285,7 @@ text-transform: uppercase;
 .links-footer{
     width: 33%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .links h2{
     font-size: 1.5em;
@@ -349,10 +352,10 @@ text-transform: uppercase;
         font-size: 1.3em; /*20px*/
     }
     .jogos ul img{
-        max-width: 150px;
+        max-width: 9.375em;
     }
-    .content img{
-        max-width: 450px;
+    .about-position img{
+        max-width: 28.125em;
     }
     .jogos-aovivo h2, .jogos-embreve h2{
         font-size: 0.9em;
@@ -379,13 +382,72 @@ text-transform: uppercase;
     .siga-nos{
         flex-direction: column;
     }
-    .partida{
+    .partidas img{
+        max-width: 1.5em;
+    }
+    .rodape .content img{
+        max-width: 21.875em;
+    }
+    .links {
+        width: 1.875;
+    }
+    .sociais{
+        width: 20%;
+    }
+    .desktop_only{
         display: none;
     }
 }
 /*991px*/
 @media screen and (max-width: 61.9375em){
 
+    .banner{
+        display: flex;
+    }
+    .banner-text h1{
+        font-size: 3.125em;
+    }
+    .banner-text p{
+        display: none;
+    }
+    .banner-text a{
+        font-size: 1.5625em;
+    }
+    .no_767{
+        display: none;
+    }
+    .about-text{
+        margin-top: 2em;
+    }
+    .about-text h2{
+        font-size: 1.75em;
+    }
+    .about-text p{
+        font-size: 1em;
+    }
+    .jogos{
+        height: 5.5em;
+    }
+    .about-position img{
+        max-width: 24em;
+    }
+    .bg-noticias .flex-center-bt{
+        flex-direction: column;
+    }
+    .noticias .flex-center-bt{
+        flex-direction: row;
+    }
+    #meus-bars{
+        display: block;
+    }
+    .menu ul{
+        display: none;
+    }
+}
+@media screen and (max-width: 53.4375em){
+    .tirar_link{
+        display: none;
+    }
 }
 /*767px*/
 @media screen and (max-width: 47.9375em){
